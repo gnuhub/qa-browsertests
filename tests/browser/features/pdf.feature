@@ -9,7 +9,7 @@
 # qa-browsertests top-level directory and at
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
-@ie6-bug  @ie7-bug @test2.wikipedia.org
+@chrome @firefox @internet_explorer_8 @internet_explorer_9 @internet_explorer_10 @phantomjs @test2.wikipedia.org
 Feature: PDF
 
   Scenario: Check for Download as PDF link

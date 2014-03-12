@@ -9,7 +9,7 @@
 # qa-browsertests top-level directory and at
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
-@login @test2.wikipedia.org
+@chrome @firefox @internet_explorer_6 @internet_explorer_7 @internet_explorer_8 @internet_explorer_9 @internet_explorer_10 @login @phantomjs @test2.wikipedia.org
 Feature: Hotcat
 
   Background:

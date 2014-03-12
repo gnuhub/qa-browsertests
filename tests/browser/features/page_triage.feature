@@ -9,9 +9,10 @@
 # qa-browsertests top-level directory and at
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
-@en.wikipedia.beta.wmflabs.org @test2.wikipedia.org
+@chrome @en.wikipedia.beta.wmflabs.org @firefox @internet_explorer_8 @internet_explorer_9 @internet_explorer_10 @phantomjs @test2.wikipedia.org
 Feature: PageTriage
 
+  @internet_explorer_6 @internet_explorer_7
   Scenario: Check that NewPagesFeed has correct controls for anonymous user
     Given I am at the NewPagesFeed page
     Then I should see a Learn more link
@@ -19,8 +20,7 @@ Feature: PageTriage
       And I should see a status icon for a new article
       And I should not see a Review button
 
-  # https://bugzilla.wikimedia.org/show_bug.cgi?id=43598 ie
-  @ie6-bug @ie7-bug
+  # https://bugzilla.wikimedia.org/show_bug.cgi?id=43598 @internet_explorer_6 @internet_explorer_7
   Scenario: Check set filters selection
     Given I am at the NewPagesFeed page
     When I click Set filters

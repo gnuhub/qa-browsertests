@@ -9,7 +9,7 @@
 # qa-browsertests top-level directory and at
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
-@login @phantomjs-bug
+@chrome @firefox @internet_explorer_6 @internet_explorer_7 @internet_explorer_8 @internet_explorer_9 @internet_explorer_10 @login @phantomjs
 Feature: ProveIt
 
   Background:
@@ -18,7 +18,6 @@ Feature: ProveIt
       And I click Edit button on the page
       And I click ProveIt show button
       And I click add a reference link
-
 
   Scenario: Add a new reference
     When I choose a Book reference

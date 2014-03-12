@@ -9,8 +9,8 @@
 # qa-browsertests top-level directory and at
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
-# http://www.mediawiki.org/wiki/Article_feedback/Version_5/Feature_Requirements#Platforms @ie6-bug
-@ie6-bug
+# See http://www.mediawiki.org/wiki/Article_feedback/Version_5/Feature_Requirements#Platforms for internet_explorer_6
+@chrome @firefox @internet_explorer_7 @internet_explorer_8 @internet_explorer_9 @internet_explorer_10 @phantomjs
 Feature: AFTv5
 
   Background:

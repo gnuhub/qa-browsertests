@@ -9,17 +9,19 @@
 # qa-browsertests top-level directory and at
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
-@en.wikipedia.beta.wmflabs.org @login @test2.wikipedia.org @chrome-bug
+@chrome @en.wikipedia.beta.wmflabs.org @firefox @internet_explorer_7 @internet_explorer_8 @internet_explorer_9 @internet_explorer_10 @login @phantomjs @test2.wikipedia.org
 Feature: Page
 
   Background:
     Given I am logged in
 
+  @internet_explorer_6
   Scenario:Go to page that does not exist
     Given I am at page that does not exist
     Then page text should contain pages
       And link Create should be there
 
+  @internet_explorer_6
   Scenario: Prepare to start a new page using the URL
     Given I am at page that does not exist
     When I click link Create source
@@ -30,6 +32,7 @@ Feature: Page
       And Show Changes button should be there
       And Edit controls should be there
 
+  @internet_explorer_6
   Scenario: Start a new page using the URL
     Given I am at page that does not exist
     When I click link Create source
@@ -43,6 +46,7 @@ Feature: Page
       And unwatch element should be there
       And watch element should not be there
 
+  @internet_explorer_6
   Scenario: Move existing page dialog
     Given I am starting a page to be moved
       And I create the page to be moved
@@ -53,7 +57,6 @@ Feature: Page
       And I should see a Reason textarea
       And I should see a Watch source page radio button
 
-  @ie6-bug
   Scenario: Move existing page
     Given I am starting a page to be moved to a new name
     And I have clicked Move on the newly created page

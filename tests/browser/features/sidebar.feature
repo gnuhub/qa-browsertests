@@ -9,7 +9,7 @@
 # qa-browsertests top-level directory and at
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
-@en.wikipedia.beta.wmflabs.org
+@chrome @en.wikipedia.beta.wmflabs.org @firefox @internet_explorer_6 @internet_explorer_7 @internet_explorer_8 @internet_explorer_9 @internet_explorer_10 @phantomjs
 Feature: Sidebar
 
   Scenario: Go to a random page and interaction should be expanded
