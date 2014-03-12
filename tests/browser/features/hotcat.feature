@@ -10,12 +10,11 @@
 # https://git.wikimedia.org/blob/qa%2Fbrowsertests/HEAD/CREDITS
 #
 @login @test2.wikipedia.org
-
 Feature: Hotcat
 
   Background:
     Given I am logged in
-      And I am at random page
+      And I am at a random page
 
   Scenario: Hotcat category link
     When I click the Categories link

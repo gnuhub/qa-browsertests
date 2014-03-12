@@ -13,29 +13,29 @@
 Feature: Sidebar
 
   Scenario: Go to a random page and interaction should be expanded
-    Given I am at random page
+    Given I am at a random page
     Then Interaction section should be expanded
 
   Scenario: Go to a random page and click interaction and it should collapse
-    Given I am at random page
+    Given I am at a random page
     When I click the interaction section
     Then Interaction section should be collapsed
 
   Scenario: Go to a random page and print/export section should be collapsed
-    Given I am at random page
+    Given I am at a random page
     Then Print export section should be collapsed
 
   Scenario: Go to a random page and click print/export and it should expand
-    Given I am at random page
+    Given I am at a random page
     When I click print export section
     Then Print export section should be expanded
 
   Scenario: Go to a random page and tools section should be collapsed
-    Given I am at random page
+    Given I am at a random page
     Then Tools section should be collapsed
 
   Scenario: Go to a random page and click tools and it should expand
-    Given I am at random page
+    Given I am at a random page
     When I click tools section
     Then Tools section should be expanded
 

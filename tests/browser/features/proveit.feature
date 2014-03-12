@@ -14,7 +14,7 @@ Feature: ProveIt
 
   Background:
     Given I am logged in
-    When I am at random page
+    When I am at a random page
       And I click Edit button on the page
       And I click ProveIt show button
       And I click add a reference link
