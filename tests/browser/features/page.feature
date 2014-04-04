@@ -43,8 +43,8 @@ Feature: Page
       And page text should be there
       And Discussion link should be there
       And Edit link should be there
-      And unwatch element should be there
-      And watch element should not be there
+      And watch element should be there
+      And unwatch element should not be there
 
   @internet_explorer_6
   Scenario: Move existing page dialog

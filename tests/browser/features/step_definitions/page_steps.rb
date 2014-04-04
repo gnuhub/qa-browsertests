@@ -147,10 +147,10 @@ Then(/^the old page should display a redirect to the new page$/) do
   end
 end
 
-Then(/^unwatch element should be there$/) do
-  on(ArticlePage).unwatch_element.when_present.should be_visible
+Then(/^watch element should be there$/) do
+  on(ArticlePage).watch_element.when_present.should be_visible
 end
 
-Then(/^watch element should not be there$/) do
-  on(ArticlePage).watch_element.should_not be_visible
+Then(/^unwatch element should not be there$/) do
+  on(ArticlePage).unwatch_element.should_not be_visible
 end
