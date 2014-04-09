@@ -51,7 +51,7 @@ Then(/^I have Math options radio buttons$/) do
   on(PreferencesAppearancePage) do |page|
     page.always_render_radio_element.should exist
     page.leave_as_tex_radio_element.should exist
-    page.mathjax_radio_element.should exist
+    page.mathjax_button_element.should exist
   end
 end
 Then(/^I can click Save$/) do
