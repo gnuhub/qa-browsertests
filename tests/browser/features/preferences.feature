@@ -27,13 +27,7 @@ Feature: Preferences
       And I have Math options radio buttons
       And I can click Save
       And I can restore default settings
-
-
-  Scenario: Preferences Date Time
-    Given I am logged in
-    When I navigate to Preferences
-      And I click Date and time
-    Then I can select date format
+      And I can select date format
       And I can see server time
       And I can see local time
       And I can select my time zone
